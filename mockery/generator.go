@@ -520,9 +520,9 @@ func (g *Generator) Generate() error {
 				callType,
 			)
 			{
-				g.printf("\tc := _m.On(%s)\n", strings.Join(append(
+				g.printf("\tc_call := _m.On(%s)\n", strings.Join(append(
 					[]string{fmt.Sprintf("\"%s\"", fname)}, params.Names...), ","))
-				g.printf("\treturn &%s{Call: c}\n", callType)
+				g.printf("\treturn &%s{Call: c_call}\n", callType)
 			}
 			g.printf("}\n\n")
 
@@ -531,8 +531,8 @@ func (g *Generator) Generate() error {
 				callType,
 			)
 			{
-				g.printf("\tc := _m.On(\"%s\", matchers...)\n", fname)
-				g.printf("\treturn &%s{Call: c}\n", callType)
+				g.printf("\tc_call := _m.On(\"%s\", matchers...)\n", fname)
+				g.printf("\treturn &%s{Call: c_call}\n", callType)
 			}
 			g.printf("}\n")
 		}
