@@ -9,7 +9,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/vektra/mockery/mockery"
+	"github.com/EngHabu/mockery/mockery"
 )
 
 const regexMetadataChars = "\\.+*?()|[]{}^$"
