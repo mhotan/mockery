@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/EngHabu/mockery/mockery/fixtures/test"
+	"github.com/mhotan/mockery/mockery/fixtures/test"
 )
 
 type C int

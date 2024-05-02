@@ -3,7 +3,7 @@ package mockery
 import (
 	"testing"
 
-	"github.com/EngHabu/mockery/mockery/fixtures/mocks"
+	"github.com/mhotan/mockery/mockery/fixtures/mocks"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 )

@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/EngHabu/mockery/mockery/fixtures/http"
+	"github.com/mhotan/mockery/mockery/fixtures/http"
 )
 
 type HasConflictingNestedImports interface {
